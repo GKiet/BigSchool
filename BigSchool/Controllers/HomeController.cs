@@ -25,7 +25,7 @@ namespace BigSchool.Controllers
             var viewModel = new CoursesViewModel
             {
                 UpcommingCourses = upcommingCourses,
-                ShowACtion = User.Identity.IsAuthenticated
+                ShowAction = User.Identity.IsAuthenticated
             };
             return View(viewModel);
         }
